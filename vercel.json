@@ -1,4 +1,9 @@
 {
+  // Ensure Vercel knows how to build and where to find the static output
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+
+  // SPA-style routing: let React Router handle all paths
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ]
