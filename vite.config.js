@@ -16,11 +16,6 @@ export default defineConfig(({ mode }) => ({
       },
     },
   },
-  build: {
-    rollupOptions: {
-      input: path.resolve(__dirname, "src/main.jsx")
-    }
-  },
   plugins: [
     react(),
     mode === 'development' &&
