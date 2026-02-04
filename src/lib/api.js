@@ -1,6 +1,7 @@
 import { toast } from '@/hooks/use-toast';
 
-const API_URL = 'http://localhost:5000/api';
+// Use env var in production, fall back to localhost for local dev
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
 
 // Helper function for handling fetch responses
 const handleResponse = async (response) => {
